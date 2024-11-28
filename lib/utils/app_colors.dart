@@ -12,4 +12,8 @@ class AppColors {
   static Color buttonText = const Color(0xFFF5F5F5);
   static Color buttonFrist = const Color(0xFFFF5A5F);
   static Color buttonSecond = const Color(0xFFC1839F);
+  static Color homeText = const Color(0xFF3C3C3C);
+  static Color homeTextFeildIcon = const Color(0xFF999999);
+  static Color homeSubText = const Color(0xFF898989);
+  static Color homeProductYear = const Color(0xFFC1839F);
 }

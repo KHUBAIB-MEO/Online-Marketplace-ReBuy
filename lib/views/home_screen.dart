@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:rebuy_app/widgets/home/bottom_bar.dart';
+import 'package:rebuy_app/widgets/home/home_main_content.dart';
+import 'package:rebuy_app/widgets/home/textfeild_widget.dart';
+import 'package:rebuy_app/widgets/home/upper_row_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,33 +10,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 60.0),
-            child: Row(
-              children: [
-                Container(
-                  width: 88,
-                  height: 88,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.black,
-                      width: 2,
-                    ),
-                  ),
-                  child: const CircleAvatar(
-                    radius: 43,
-                    backgroundImage: AssetImage("assets/images/user logo.jpg"),
-                  ),
-                )
-              ],
-            ),
-          )
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            upperContent(),
+            textFeild(),
+            homeMainContent(),
+          ],
+        ),
       ),
+      bottomNavigationBar: homeBottomNavigationBar(),
     );
   }
 }

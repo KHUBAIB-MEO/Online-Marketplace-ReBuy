@@ -87,6 +87,10 @@ flutter:
     - family: Dubai
       fonts:
         - asset: assets/fonts/Dubai-Regular.ttf
+
+    - family: Fira
+      fonts:
+        - asset: assets/fonts/FiraSans-Regular.ttf
   #      - asset: assets/fonts/Dosis-Medium.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
