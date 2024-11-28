@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rebuy_app/utils/app_colors.dart';
 import 'package:rebuy_app/widgets/text_style_widgets.dart';
 
 Widget mainLogo() {
@@ -14,9 +15,10 @@ Widget mainLogo() {
         child: Text(
           "ReBuy",
           style: textStyleWidget(
-            fontFamily: "MainFonts",
+            fontFamily: "MainFont",
             fontWeight: FontWeight.w800,
             fontSize: 32,
+            textColor: AppColors.mainTextColor,
           ),
         ),
       ),

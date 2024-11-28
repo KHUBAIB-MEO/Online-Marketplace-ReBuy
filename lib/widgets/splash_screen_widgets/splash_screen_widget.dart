@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rebuy_app/utils/app_colors.dart';
-import 'package:rebuy_app/widgets/mainlogo_widgets.dart';
+import 'package:rebuy_app/widgets/splash_screen_widgets/mainlogo_widgets.dart';
 
 Widget splasScreenWidget() {
   return (Container(
