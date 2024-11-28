@@ -1,16 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:rebuy_app/utils/app_colors.dart';
-import 'package:rebuy_app/widgets/login_screen_widgets/login_screen_textfeild.dart';
+import 'package:rebuy_app/widgets/login_signup_screen_widgets/login_screen_textfeild.dart';
 import 'package:rebuy_app/widgets/text_style_widgets.dart';
 
-Widget loginContainer() {
+Widget loginSignUpContainer({bool? signup}) {
   return Padding(
     padding: const EdgeInsets.only(top: 20.0),
     child: SizedBox(
       width: 344,
-      height: 236,
+      height: signup == true ? 340 : 250,
       child: Column(
         children: [
+          signup == true
+              ? Column(
+                  children: [
+                    const SizedBox(
+                      height: 25,
+                    ),
+                    SizedBox(
+                      width: 344,
+                      height: 57,
+                      child: loginScreenTextFeild(hint: "Name"),
+                    ),
+                    const SizedBox(
+                      height: 25,
+                    ),
+                  ],
+                )
+              : const Text(""),
           SizedBox(
             width: 344,
             height: 57,
@@ -45,7 +62,7 @@ Widget loginContainer() {
                 shadowColor: AppColors.transparent,
               ),
               child: Text(
-                "Log in",
+                signup == true ? "Create account" : "Log in",
                 style: textStyleWidget(
                     fontFamily: "Dubai",
                     fontSize: 24,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rebuy_app/widgets/login_screen_widgets/account_option.dart';
+import 'package:rebuy_app/widgets/login_signup_screen_widgets/account_option.dart';
 
 Widget loginSignUpOption() {
   return Row(

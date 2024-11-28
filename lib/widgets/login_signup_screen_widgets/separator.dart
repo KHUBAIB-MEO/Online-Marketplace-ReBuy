@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rebuy_app/utils/app_colors.dart';
 import 'package:rebuy_app/widgets/text_style_widgets.dart';
 
-Widget separotor() {
+Widget separator() {
   return Padding(
     padding: const EdgeInsets.only(top: 8.0),
     child: Row(
