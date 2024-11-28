@@ -12,7 +12,10 @@ Widget accountOption({required String imagePath}) {
           color: AppColors.loginOption,
           borderRadius: const BorderRadius.all(Radius.circular(22)),
         ),
-        child: Center(child: Image.asset(imagePath)),
+        child: Center(
+            child: Image.asset(
+          imagePath,
+        )),
       ),
     ),
   );

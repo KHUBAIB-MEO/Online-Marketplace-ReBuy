@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:rebuy_app/widgets/login_screen_widgets/account_option.dart';
+import 'package:rebuy_app/utils/app_colors.dart';
+import 'package:rebuy_app/widgets/login_screen_widgets/login_container.dart';
 import 'package:rebuy_app/widgets/login_screen_widgets/login_subfont_widget.dart';
 import 'package:rebuy_app/widgets/login_screen_widgets/login_text_widget.dart';
+import 'package:rebuy_app/widgets/login_screen_widgets/lower_text.dart';
 import 'package:rebuy_app/widgets/login_screen_widgets/safearea_widget.dart';
+import 'package:rebuy_app/widgets/login_screen_widgets/separator.dart';
 import 'package:rebuy_app/widgets/login_screen_widgets/upper_text_widget.dart';
 import 'package:rebuy_app/widgets/login_signup_option_widget.dart';
+import 'package:rebuy_app/widgets/text_style_widgets.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -15,15 +19,20 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          safeArea(),
-          upperText(),
-          loginText(),
-          loginSubText(),
-          loginSignUpOption()
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            safeArea(),
+            upperText(),
+            loginText(),
+            loginSubText(),
+            loginSignUpOption(),
+            separotor(),
+            loginContainer(),
+            lowerText(),
+          ],
+        ),
       ),
     );
   }

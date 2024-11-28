@@ -83,6 +83,10 @@ flutter:
     - family: SubFont
       fonts:
         - asset: assets/fonts/arial.ttf
+
+    - family: Dubai
+      fonts:
+        - asset: assets/fonts/Dubai-Regular.ttf
   #      - asset: assets/fonts/Dosis-Medium.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
