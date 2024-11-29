@@ -8,6 +8,6 @@ class LoginController extends GetxController {
   }
 
   void nevigateToHome() {
-    Get.to(() => HomeScreen());
+    Get.to(() => const HomeScreen());
   }
 }

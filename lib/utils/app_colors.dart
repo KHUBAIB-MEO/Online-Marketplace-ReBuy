@@ -22,4 +22,7 @@ class AppColors {
   static Color emailColor = const Color(0xFF979797);
   static Color accountTextFeild = const Color(0xFFEAEAEA);
   static Color accountHintText = const Color(0xFF656565);
+  static Color productinfo = const Color(0xFF087E8B).withOpacity(0.14);
+  static Color productinfoMainText = const Color(0xFF616161);
+  static Color productinfoRateText = const Color(0xFFEDEDED);
 }
