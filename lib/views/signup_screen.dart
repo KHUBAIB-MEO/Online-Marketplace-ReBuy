@@ -21,7 +21,7 @@ class SignupScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             safeArea(),
-            upperText(),
+            upperText("ReBuy"),
             loginSignUpText(method: "Sign Up"),
             loginSignUpSubText(methods: "Sign up"),
             loginSignUpOption(),

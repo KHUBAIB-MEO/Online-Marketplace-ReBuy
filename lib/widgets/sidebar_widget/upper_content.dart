@@ -10,7 +10,7 @@ Widget sideBarUpperContent() {
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        upperText(),
+        upperText("ReBuy"),
         IconButton(
             onPressed: () {
               sideBarController.navigateBack();

@@ -19,4 +19,7 @@ class AppColors {
   static Color homeProductYear = const Color(0xFFC1839F);
   static Color sideBarAction = const Color(0xFFD4E4E6);
   static Color sideBarActionHeading = const Color(0xFF5F5F5F);
+  static Color emailColor = const Color(0xFF979797);
+  static Color accountTextFeild = const Color(0xFFEAEAEA);
+  static Color accountHintText = const Color(0xFF656565);
 }

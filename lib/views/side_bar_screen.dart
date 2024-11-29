@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:rebuy_app/controllers/side_bar_controller.dart';
 import 'package:rebuy_app/widgets/home/bottom_bar.dart';
 import 'package:rebuy_app/widgets/login_signup_screen_widgets/safearea_widget.dart';
-import 'package:rebuy_app/widgets/sidebar_widget/action_widget.dart';
 import 'package:rebuy_app/widgets/sidebar_widget/lower_action_widget.dart';
 import 'package:rebuy_app/widgets/sidebar_widget/main_widget.dart';
 import 'package:rebuy_app/widgets/sidebar_widget/upper_content.dart';

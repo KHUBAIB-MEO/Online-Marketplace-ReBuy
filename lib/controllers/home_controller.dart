@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:rebuy_app/views/home_screen.dart';
 import 'package:rebuy_app/views/side_bar_screen.dart';
 
 class HomeController extends GetxController {
@@ -45,6 +46,10 @@ class HomeController extends GetxController {
   ];
   void navigateSideBar() {
     Get.to(() => const SideBarScreen());
+  }
+
+  void navigateHome() {
+    Get.to(() => const HomeScreen());
   }
 
   void bottomSelect(int index) {

@@ -5,12 +5,12 @@ import 'package:rebuy_app/widgets/text_style_widgets.dart';
 Widget lowerActionWidget({required String action}) {
   Color? containerColor;
   Color? textColor;
-  if (action == "Feedback") {
-    containerColor = AppColors.white;
-    textColor = AppColors.homeText;
-  } else {
+  if (action == "Sign out") {
     containerColor = AppColors.homeText;
     textColor = AppColors.white;
+  } else {
+    containerColor = AppColors.white;
+    textColor = AppColors.homeText;
   }
   return Padding(
     padding: const EdgeInsets.only(top: 15.0),

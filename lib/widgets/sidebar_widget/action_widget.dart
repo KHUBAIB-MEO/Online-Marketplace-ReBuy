@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:rebuy_app/controllers/side_bar_controller.dart';
 import 'package:rebuy_app/utils/app_colors.dart';
 import 'package:rebuy_app/widgets/text_style_widgets.dart';
 
 Widget actionWidget(
     {required List<Map<String, String>> content, required index}) {
+  SideBarController sideBarController = Get.put(SideBarController());
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: GestureDetector(
+      onTap: () {
+        if (index == 0) {
+          sideBarController.navigateMyAcount();
+        } else if (index == 1) {
+          sideBarController.navigateMyOrderScreen();
+        }
+      },
       child: Container(
         width: 346,
         height: 88,

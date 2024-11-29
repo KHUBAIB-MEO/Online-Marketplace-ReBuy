@@ -5,7 +5,7 @@ import 'package:rebuy_app/utils/app_colors.dart';
 import 'package:rebuy_app/widgets/profile_widgets.dart';
 import 'package:rebuy_app/widgets/text_style_widgets.dart';
 
-Widget upperContent() {
+Widget upperContent({bool? account}) {
   HomeController homeController = Get.put(HomeController());
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -18,23 +18,29 @@ Widget upperContent() {
           Padding(
             padding: const EdgeInsets.only(top: 50.0, left: 25.0),
             child: Text(
-              "Hey Alice",
+              account == true ? "Alice Eve" : "Hey Alice",
               style: textStyleWidget(
                   fontFamily: "Fira",
                   fontSize: 32,
-                  fontWeight: FontWeight.w700,
-                  textColor: AppColors.homeText),
+                  fontWeight:
+                      account == true ? FontWeight.w500 : FontWeight.w700,
+                  textColor: account == true
+                      ? AppColors.buttonFrist
+                      : AppColors.homeText),
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 1.0, left: 25.0),
             child: Text(
-              "Welcome back!",
+              account == true ? "khubaibnaeem42@gmail.com" : "Welcome back!",
               style: textStyleWidget(
                   fontFamily: "Fira",
-                  fontSize: 24,
-                  fontWeight: FontWeight.w400,
-                  textColor: AppColors.buttonFrist),
+                  fontSize: account == true ? 14 : 24,
+                  fontWeight:
+                      account == true ? FontWeight.w300 : FontWeight.w400,
+                  textColor: account == true
+                      ? AppColors.emailColor
+                      : AppColors.buttonFrist),
             ),
           ),
         ],
@@ -43,10 +49,16 @@ Widget upperContent() {
         padding: const EdgeInsets.only(top: 40.0),
         child: IconButton(
           onPressed: () {
-            homeController.navigateSideBar();
+            if (account != true) {
+              homeController.navigateSideBar();
+            } else if (account == true) {
+              homeController.navigateSideBar();
+            } else {
+              homeController.navigateHome();
+            }
           },
-          icon: const Icon(
-            Icons.menu,
+          icon: Icon(
+            account == true ? Icons.cancel : Icons.menu,
             size: 40,
           ),
         ),
